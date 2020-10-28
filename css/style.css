@@ -63,6 +63,68 @@ body{
 #menu-bars{
     display: none;
 }
+.banner{
+    position: relative;
+}
+.banner-container{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(127, 255, 212, 0.322); */
+    position: absolute;
+    top: 0;
+}
+.banner-content{
+    width: 80%;
+    height: 100%;
+    /* background-color: rgba(255, 235, 205, 0.315); */
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-text{
+    width: 50%;
+    height: 90%;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-left: 2.0em;
+}
+.banner-text h1{
+    font-size: 4.62em;
+}
+.banner-text p{
+    font-size: 1.70em;
+}
+.banner-text a{
+    color: #fff;
+    font-size: 1.70em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--red);
+    padding: 0.5em 1.2em;
+    border-radius: 0.75em;
+    margin-top: 2em;
+}
+.games{
+    width: 100%;
+    height: 7.5em;
+    /* background-color: yellow; */
+}
+.games ul{
+    width: 100%;
+    /* background-color: red; */
+    list-style-type: none;
+}
+.games img{
+    width: 160px;
+}
+.games ul a:hover img{
+    transition: 0.5s;
+    transform: scale(1.5);
+}
 
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
