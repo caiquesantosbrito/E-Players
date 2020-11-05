@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 :root{
+    
     --background: #000000;
-    --red: #c20000;
-    --blue: #001f70;
-    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --bgnews: #1E1C21;
+    --red: #C20000;
+    --blue: #001F70;
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
     --font: 'Titillium Web', sans-serif;
 }
 *{
@@ -13,12 +15,13 @@
     border: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: var(--background);
     font-family: var(--font);
     font-size: 16px;
 }
-.img{
+img{
     width: 100%;
 }
 .header-top{
@@ -27,7 +30,7 @@ body{
     /* background-color: aliceblue; */
 }
 .content{
-    width: 100%;
+    width: 95%;
     max-width: 75em;
     height: 100%;
     /* background-color: aqua; */
@@ -36,6 +39,11 @@ body{
 .flex-spbt-center{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.flex-spar-center{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 .header-top img{
@@ -47,9 +55,10 @@ body{
 }
 .menu ul{
     list-style-type: none;
+
 }
 .menu a{
-    color: #fff;
+    color:#fff;
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -69,38 +78,37 @@ body{
 .banner-container{
     width: 100%;
     height: 100%;
-    /* background-color: rgba(127, 255, 212, 0.322); */
+    /* background-color: rgba(127, 255, 212, 0.39); */
     position: absolute;
     top: 0;
 }
 .banner-content{
-    width: 80%;
+    width: 95%;
     height: 100%;
-    /* background-color: rgba(255, 235, 205, 0.315); */
+    /* background-color: rgba(255, 235, 205, 0.384); */
     margin: auto;
     display: flex;
     justify-content: flex-end;
 }
 .banner-text{
     width: 50%;
-    height: 90%;
+    height: 100%;
     /* background-color: coral; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    padding-left: 2.0em;
+    color:#fff;
 }
 .banner-text h1{
-    font-size: 4.62em;
+    font-size: 5.62em;
 }
 .banner-text p{
-    font-size: 1.70em;
+    font-size: 1.87em;
 }
 .banner-text a{
-    color: #fff;
-    font-size: 1.70em;
+    color:#fff;
+    font-size: 1.87em;
     text-decoration: none;
     text-transform: uppercase;
     background-color: var(--red);
@@ -119,37 +127,39 @@ body{
     list-style-type: none;
 }
 .games img{
-    width: 160px;
+    width: 170px;
+  
 }
 .games ul a:hover img{
     transition: 0.5s;
-    transform: scale(1.5);
+    transform:scale(1.5);
 }
 .about{
     height: 31.25em;
     background-color: var(--blue);
+
     position: relative;
 }
 .about-angulation{
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-
 }
 .angulation{
-    width: 100%;
     height: 24.125em;
+    width: 100%;
     background-color: var(--background);
-    transform: skewY(-4deg);
+
+    transform: skewY(-4deg);   
 }
 .container-about{
     color: white;
     position: absolute;
-    top: 0;
+    top: 0
 }
 .content-about{
-    width: 80%;
+    width: 95%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -169,17 +179,15 @@ body{
 .content-about img{
     max-width: 31.875em;
 }
-.games-ao-vivo::after{
-    content: '';
-    border: solid 1px #fff;
-    height: 2em;
-    margin-left: 1em;
+.linha{
+    border:solid 1px #fff;
+    height: 3em;
 }
 .games-ao-vivo, .games-em-breve{
     display: flex;
-    color: #fff;
+    color:#fff;
     align-items: center;
-    font-size: 1.875em;/*30px*/
+    font-size: 1.5625em;/*30px*/
     justify-content: space-between;
 }
 .partida{
@@ -203,7 +211,6 @@ body{
 .time2 img{
     margin-right: 0.5em;
 }
-
 /* Início notícias */
 .bg-news{
     width: 100%;
@@ -223,7 +230,7 @@ body{
 .next-games{
     width: 25%;
     height: 90%;
-    /* background-color: rgb(167, 167, 167); */
+    /* background-color: rgb(167, 167, 167); */   
 }
 .content-news{
     display: flex;
@@ -262,7 +269,7 @@ body{
     align-items: center;
     /* background-color: red; */
     font-weight: 700;
-    color: #fff;   
+    color: #fff;  
 }
 .teams{
     width: 100%;
@@ -279,34 +286,32 @@ body{
 .next-games-match > p{
     margin-top: 1em;
 }
-.links-footer {
+.links-footer{
     width: 33%;
     display: flex;
     justify-content: space-around;
 }
-
-/* Rodapé */
-.links {
+.links{
     color: white;
 }
-.links a {
+.links a{
     text-decoration: none;
     color: white;
 }
-.rodape {
+.rodape{
     padding: 1em 0;
 }
-.logo-rodape {
+.logo-rodape{
     width: 19.06em;
 }
-.sociais h2 {
+.sociais h2{
     color: white;
 }
-.sociais > h2 {
+.sociais > h2{
     font-size: 0.875em;
     margin-bottom: 0.5em;
 }
-.sociais form {
+.sociais form{
     display: flex;    
     margin-bottom: 0.5em;
 }
@@ -314,7 +319,7 @@ body{
     height: 2.3125em;
     width: 12.1875em;    
 }
-.sociais input[type="email"]::placeholder {
+.sociais input[type="email"]::placeholder{
     color: #B8B3B3;
     font-weight: bold;
 }
@@ -324,7 +329,7 @@ body{
     background-color: #8326EF;
     font-size: 1.1em;
 }
-.siga-nos {
+.siga-nos{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -333,17 +338,17 @@ body{
 
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
-       
+
 }
 /* Até 991px */
 @media screen and (max-width: 61.93em){
     
 }
-/* Até 767px */
+/* até 767px */
 @media screen and (max-width: 47.93em){
-    
+   
 }
 /* Até 576px */
 @media screen and (max-width: 36em){
-    
+
 }
