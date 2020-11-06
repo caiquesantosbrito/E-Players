@@ -19,7 +19,7 @@
 body{
     background-color: var(--background);
     font-family: var(--font);
-    font-size: 16px;
+    font-size: 14px;
 }
 img{
     width: 100%;
@@ -336,13 +336,33 @@ img{
     margin-top: 0.8em;
 }
 
-/* Até 1199px */
+/* Até 1198px */
 @media screen and (max-width: 74.93em){
-
+    .banner img{
+        width: 100%;
+    }
+    .banner-text h1{
+        font-size: 4em;
+    }
+    .text-about{
+        padding-left: 50px;
+    }
 }
-/* Até 991px */
+/* Até 990px */
 @media screen and (max-width: 61.93em){
-    
+    .banner img{
+        width: 100%;
+    }
+    .banner-text h1{
+        font-size: 4em;
+    }
+    .text-about{
+        font-size: 0.8em;
+    }
+    .content-about img{
+        max-width: 25em;
+    }
+
 }
 /* até 767px */
 @media screen and (max-width: 47.93em){
